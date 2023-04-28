@@ -58,7 +58,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
         _______, KC_KP_4, KC_KP_5, KC_KP_6, _______, _______, _______, _______, _______, _______, _______, _______, _______,                   KC_MNXT,
         _______, KC_KP_1, KC_KP_2, KC_KP_3, KC_PENT, _______, _______, _______, _______, RGB_HUD, RGB_HUI, _______, _______, _______,          KC_MPRV,
         _______, KC_KP_0, KC_KP_DOT, _______, _______, _______, _______, NK_TOGG, _______, RGB_VAD, RGB_VAI, RGB_TOG,          _______, RGB_MOD, KC_MSTP,
-        _______, _______, _______,                            _______,                            _______, _______, _______, RGB_SPD, RGB_RMOD, RGB_SPI
+        _______, _______, _______,                            _______,                            _______, _______, KC_INS, RGB_SPD, RGB_RMOD, RGB_SPI
     ),
 
     [2] = LAYOUT(
@@ -122,7 +122,7 @@ void keyboard_post_init_user(void) {
 
 
 const uint16_t PROGMEM encoder_map[][NUM_ENCODERS][2] = {
-    [0] = { ENCODER_CCW_CW(KC_TRNS, KC_TRNS) },
+    [0] = { ENCODER_CCW_CW(KC_VOLD, KC_VOLU) },
     [1] = { ENCODER_CCW_CW(KC_TRNS, KC_TRNS) },
     [2] = { ENCODER_CCW_CW(KC_TRNS, KC_TRNS) },
     [3] = { ENCODER_CCW_CW(KC_TRNS, KC_TRNS) },

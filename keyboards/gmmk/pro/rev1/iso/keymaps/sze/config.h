@@ -39,7 +39,7 @@
 
 /* Change USB Polling Rate to 1000hz and a larger keys per scan for elite gaming*/
 #define USB_POLLING_INTERVAL_MS 1
-//#define QMK_KEYS_PER_SCAN 12
+#define QMK_KEYS_PER_SCAN 12
 
 // 5 is default, but causes chatter on space key
-#define DEBOUNCE 7
+//#define DEBOUNCE 10
